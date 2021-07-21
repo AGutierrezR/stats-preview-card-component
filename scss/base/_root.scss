@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+:root {
+  @each $_, $shade in $colors {
+    @each $color, $value in $shade {
+      --clr-#{$color}: #{$value};
+    }
+  }
+}
