@@ -1,0 +1,12 @@
+$colors: (
+  primary: (
+    darkblue: hsl(233, 47%, 7%),
+    darkblue-saturated: hsl(244, 38%, 16%),
+    softviolet: hsl(277, 64%, 61%),
+  ),
+  neutral: (
+    white: hsl(0, 0%, 100%),
+    white-alpha75: hsla(0, 0%, 100%, 0.75),
+    white-alpha60: hsla(0, 0%, 100%, 0.6),
+  ),
+);
