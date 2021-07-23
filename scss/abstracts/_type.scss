@@ -1,14 +1,16 @@
 $type-scale: (
-  small: (
-    // Minor third
-    100: 0.512rem,
-    200: 0.64rem,
-    300: 0.75rem,
-    400: 1rem,
-    500: 1.125rem,
-    600: 1.5rem,
-    700: 1.953rem,
-    800: 2.441rem,
-    900: 2.25rem,
+  mobile: (
+    title: 1.85rem,
+    stat: 1.5rem,
+    body: 1rem,
+    small: 0.75rem,
   ),
+  desktop: (
+    title: 2.25rem,
+  ),
+);
+
+$type-weight: (
+  regular: 400,
+  bold: 700,
 );

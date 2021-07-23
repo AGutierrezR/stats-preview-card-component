@@ -2,54 +2,101 @@
 
 .stats-card {
   display: flex;
+  flex-direction: column-reverse;
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
   color: var(--clr-white);
+  background-color: var(--clr-darkblue-saturated);
+  border-radius: 10px;
+  overflow: hidden;
 
   &__content {
     display: flex;
     flex-direction: column;
-    padding: 5.85em 7em 5.85em 5.85em;
-    width: 570px;
-    min-width: 300px;
+    padding: 2.5em 2em;
     background-color: var(--clr-darkblue-sat);
-    border-radius: 10px 0 0 10px;
+    text-align: center;
   }
 
   h1 {
     margin-bottom: 0.75em;
+
+    span {
+      color: var(--clr-softviolet);
+    }
   }
 
   .lead {
-    line-height: 1.5;
-    margin-bottom: 5em;
+    line-height: 1.8;
+    margin-bottom: 2.2em;
+    color: var(--clr-white-alpha75);
   }
 
-  ul {
-    display: flex;
+  &__stats {
     list-style: none;
     justify-content: space-between;
     letter-spacing: 1px;
-    margin-right: 2em;
 
-    h2 {
-      margin-bottom: 0.3em;
+    li {
+      font-size: var(--fs-stat);
+      font-weight: var(--fw-bold);
+
+      &:not(:last-child) {
+        margin-bottom: 1.2em;
+      }
     }
 
-    p {
+    span {
+      display: block;
+      font-weight: var(--fw-regular);
       font-family: var(--ff-secundary);
-      font-size: var(--fs-300);
+      font-size: var(--fs-small);
       color: var(--clr-white-alpha60);
+      margin-top: 0.8em;
       text-transform: uppercase;
+      letter-spacing: 1px;
     }
   }
 
   &__img {
-    width: 540px;
-    min-width: 200px;
     background-color: var(--clr-softviolet);
-    background-image: url('../images/image-header-desktop.jpg');
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 0 10px 10px 0;
+
+    img {
+      display: block;
+      mix-blend-mode: multiply;
+      opacity: 0.8;
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint('desktop') {
+    flex-direction: row;
+
+    &__content {
+      flex: 1 1 53%;
+      padding: 5em 9em 4em 5em;
+      text-align: left;
+    }
+
+    &__stats {
+      display: flex;
+      margin-top: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-right: 0.4em;
+      }
+    }
+
+    &__img {
+      flex: 1 1 50%;
+    }
   }
 }
