@@ -23,6 +23,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ### The challenge
 
 - Using blend mode to set the image color right.
+- Use of CH Unit in CSS
 
 Users should be able to:
 
@@ -39,12 +40,15 @@ Users should be able to:
 
 ## My process
 
+I had to add two breakpoints (Tablet: 768px and HD: 1366px) to have a more responsive design between mobile (340px) and desktop (1440px)
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- [Sass](https://sass-lang.com/) - For styles
 
 ### Continued development
 
@@ -53,8 +57,6 @@ Users should be able to:
 ### Useful resources
 
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This helped me with the layout.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
