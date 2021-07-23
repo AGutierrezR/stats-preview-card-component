@@ -17,7 +17,7 @@
         --fs-#{$prop}: #{$value};
       }
     } @else {
-      @include media-breakpoint('desktop') {
+      @include media-breakpoint(#{$screen-size}) {
         @each $prop, $value in $property {
           --fs-#{$prop}: #{$value};
         }
