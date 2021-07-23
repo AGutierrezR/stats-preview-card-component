@@ -52,21 +52,21 @@
         </ul>
       </section>
       <div class="stats-card__img">
-        <img
-          src="images/image-header-mobile.jpg"
-          srcset="
-            images/image-header-mobile.jpg   375w,
-            images/image-header-desktop.jpg 1440w
-          "
-        />
+        <picture>
+          <source
+            srcset="images/image-header-desktop.jpg"
+            media="(min-width: 1399px)"
+          />
+          <img src="images/image-header-mobile.jpg" alt="" />
+        </picture>
       </div>
     </main>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Andres Gutierrez</a>.
-    </div>
+    </footer>
   </body>
 </html>
